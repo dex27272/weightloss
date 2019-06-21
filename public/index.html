@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+		<title>WeightLoss Dani & Dino</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="box">
+				<h3>Dino</h3>
+				<!-- <div class="chart">
+					<canvas id="gewichtDino" width="200" height="100"></canvas>
+				</div> -->
+				<div class="chart">
+					<canvas id="umfangDino" width="200" height="100"></canvas>
+				</div>
+			</div>
+			<div class="box">
+				<h3>Dani</h3>
+				<!-- <div class="chart">
+					<canvas id="gewichtDani" width="200" height="100"></canvas>
+				</div> -->
+				<div class="chart">
+					<canvas id="umfangDani" width="200" height="100"></canvas>
+				</div>
+			</div>
+		</div>
+		<form class="submit" name="dataEntry">
+			<div>
+				<select class="select-css" name="users">
+					<option>wähle deinen Benutzer</option>
+					<option value="Dani">Dani</option>
+					<option value="Dino">Dino</option>
+				</select>
+				<label for="datum">Datum:</label>
+				<input type="text" name="datum" value="" />
+				<label for="gewicht">Gewicht:</label>
+				<input type="text" name="gewicht" value="" />
+				<label for="umfang">Umfang:</label>
+				<input type="text" name="umfang" value="" />
+				<div class="button">
+					<button type="submit">senden</button>
+				</div>
+			</div>
+		</form>
+
+		<script src="weightloss.js"></script>
+	</body>
+</html>
